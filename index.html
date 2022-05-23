@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <script>
+
+        function myText() {
+            document.getElementById("demo").innerHTML = "Hello JavaScript!"
+
+        }
+        function myColor() {
+            document.getElementById("demo").style.color = "blue"
+
+        }
+        function hide() {
+            document.getElementById("myimg1").style.display = "none"
+
+        }
+
+        function show() {
+            document.getElementById("myimg1").style.display = "block"
+
+        }
+
+
+        function add() {
+            n1 = document.getElementById("num1").value;
+            var n2 = document.getElementById("num2").value;
+            document.getElementById("res").value = Number(n1) + Number(n2);
+
+        }
+
+
+
+    </script>
+
+</head>
+
+<body>
+
+    <h2>What Can JavaScript Do?</h2>
+
+    <p id="demo">JavaScript can change HTML content.</p>
+
+
+    <br>
+    <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+
+    <button type="button" onclick='document.getElementById("demo").style.color = "red"'>Color</button>
+
+    <button type="button" onclick='document.getElementById("demo").style.display = "none"'>Hide</button>
+
+    <button type="button" onclick='document.getElementById("demo").style.display = "block"'>Show</button>
+    <button type="button" onclick='document.getElementById("myimg1").src = "images/img2.webp"'>Image</button>
+
+    <br>
+    <img id="myimg1" src="images/img1.webp" width="300">
+    <br>
+    <button type="button" onclick='myText()'>Click Me!</button>
+
+    <button type="button" onclick='myColor()'>Color</button>
+
+    <button type="button" onclick=''>Hide</button>
+
+    <button type="button" onclick='show()'>Show</button>
+    <button type="button" onclick='hide()'>hide</button>
+    <br><br>
+
+    <label for="num1">Number 1</label><br>
+    <input type="text" id="num1"><br>
+    <label for="num2">Number 2</label><br>
+    <input type="text" id="num2"><br>
+    <label for="res">Result</label><br>
+    <input type="text" id="res"><br>
+    <input type="submit" value="+" onclick="add()">
+    <input type="submit" value="-">
+    <input type="submit" value="*">
+    <input type="submit" value="/">
+
+    <br>
+
+    <button type="button" onclick='document.getElementById("demo").style.background="red"'>BG</button>
+    <button type="button" onclick='alert("Hello!")'>BG</button>
+
+
+</body>
+
+</html>
